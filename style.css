@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* full container */
+.container {
+    background-color: var(--very-pale-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+}
+
+/* image */
+.image {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+/* header tekst */
+.container h1 {
+    color: var(--dark-blue);
+    font-size: 32px;
+    font-weight: 900;
+}
+
+/* informations */
+.container p {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    width: 75%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* price on site: music icon, name, cost, change */
+.price {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* first span in container */
+.price .span-first {
+    display: flex;
+}
+
+/* music icon */
+.price img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+/* annual plan */
+.price h2 {
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+/* price */
+.price p {
+    color: var(--desaturated-blue);
+}
+
+/* change */
+.price a {
+    color: var(--bright-blue);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* button */
+button {
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    border: none;
+    color: var(--very-pale-blue);
+    font-weight: 900;
+    left: 50%;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+/* cancle form */
+.cancel {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES for: 375px */
+@media only screen and (max-width: 375px) {
+
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+
+    .container {
+        width: 85%;
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

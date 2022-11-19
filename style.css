@@ -110,6 +110,7 @@ button {
     border-radius: 10px;
     border: none;
     color: var(--very-pale-blue);
+    cursor: pointer;
     font-weight: 900;
     left: 50%;
     padding: 1rem;
